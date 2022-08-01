@@ -6,4 +6,8 @@ public interface HTTPRequestClient {
     //base URL is set as constant
     public static final String GET_URL = "http://openlibrary.org/search.json";
 
+    void sendGET(String request, String url);
+    void checkError();
+    String getResponse();
+
 }
